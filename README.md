@@ -1,3 +1,3 @@
-# class based css techniques
+# Class-based css techniques
 This is a collection of projects worked on throughout a class dedicated to
-html, css, javascript, and more. 
+html, css, javascript, and more.
