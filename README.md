@@ -1,3 +1,2 @@
-# Class-based css techniques
-This is a collection of projects worked on throughout a class dedicated to
-html, css, javascript, and more.
+# DOM-Manipulation Cardio. 
+## Regular DOM practice of Vanilla JS techniques ranging from older JS techniques to refactoring into ES6 and beyond...
