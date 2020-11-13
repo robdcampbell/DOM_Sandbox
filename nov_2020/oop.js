@@ -149,6 +149,7 @@
   // Constructor Function 
       // A good start, but you don't want to keep instantiating the method.
   
+      /*
       function Elf(name, weapon){
         return{
           name:name, 
@@ -159,7 +160,24 @@
         }
       }
 
-  const burtReynolds = new Elf("Burt Reyonlds", "Pterodactyl");
+      const burtReynolds = new Elf("Burt Reyonlds", "Pterodactyl");
 
-  console.log(burtReynolds.name);
-  console.log(burtReynolds.attack());
+      console.log(burtReynolds.name);
+      console.log(burtReynolds.attack());
+      */
+    
+    // Classes
+
+    class Elf{
+      constructor(name, weapon){
+        this.name = name, 
+        this.weapon = weapon
+      }
+      attack(){
+        return `${this.name} attacks with ${this.weapon}!`;
+      }
+    }
+
+    const balthazar = new Elf('Balthazar Imotep', 'a bunch of snakes')
+    console.log(balthazar.attack());
+
