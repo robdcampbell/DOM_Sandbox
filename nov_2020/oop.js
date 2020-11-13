@@ -120,10 +120,46 @@
   
   */
 
-  Date.prototype.lastYear = function(){
-    return this.getFullYear() - 1;
-  }
-  console.log(Date.prototype);
+  /*
+      Date.prototype.lastYear = function(){
+        return this.getFullYear() - 1;
+      }
+      console.log(Date.prototype);
 
-  console.log(new Date('1900-10-10').getFullYear());
-  console.log(new Date('1900-10-10').lastYear());
+      console.log(new Date('1900-10-10').getFullYear());
+      console.log(new Date('1900-10-10').lastYear());
+  */
+
+  // 11_12- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  // Object Lieral 
+    /*
+    const elf = {
+        name: 'Orwell',
+        weapon: 'bow',
+        attack(){
+          return `Attack with a ${this.weapon}`;  
+        }
+      }
+
+      console.log(elf.attack());
+    */
+   
+  // Constructor Function 
+      // A good start, but you don't want to keep instantiating the method.
+  
+      function Elf(name, weapon){
+        return{
+          name:name, 
+          weapon: weapon, 
+          attack(){
+            return `${this.name} attacks with ${this.weapon}!`;
+          }
+        }
+      }
+
+  const burtReynolds = new Elf("Burt Reyonlds", "Pterodactyl");
+
+  console.log(burtReynolds.name);
+  console.log(burtReynolds.attack());
