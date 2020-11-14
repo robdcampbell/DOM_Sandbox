@@ -168,16 +168,26 @@
     
     // Classes
 
-    class Elf{
-      constructor(name, weapon){
-        this.name = name, 
-        this.weapon = weapon
+      class Character{
+        constructor(name, weapon){
+          this.name = name, 
+          this.weapon = weapon
+        }
+        attack(){
+          return `${this.name} attacks with ${this.weapon}!`;
+        }
       }
-      attack(){
-        return `${this.name} attacks with ${this.weapon}!`;
+
+      class Elf extends Character{
+        constructor(name, weapon, age){
+            super(name, weapon);
+            this.age = age;
+        }
+        
       }
-    }
 
-    const balthazar = new Elf('Balthazar Imotep', 'a bunch of snakes')
-    console.log(balthazar.attack());
+      const balthazar = new Elf('Balthazar Imotep', 'a bunch of snakes')
+      console.log(balthazar.attack());
 
+
+      
