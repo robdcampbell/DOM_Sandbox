@@ -166,7 +166,9 @@
       console.log(burtReynolds.attack());
       */
     
-    // Classes
+    // Classes 
+      // Character example
+      /*
 
       class Character{
         constructor(name, weapon){
@@ -183,11 +185,11 @@
             super(name, weapon);
             this.age = age;
         }
-        
+
       }
 
       const balthazar = new Elf('Balthazar Imotep', 'a bunch of snakes')
       console.log(balthazar.attack());
-
+      */
 
       
