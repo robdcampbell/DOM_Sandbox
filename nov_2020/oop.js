@@ -192,4 +192,8 @@
       console.log(balthazar.attack());
       */
 
-      
+      const multilply1 = (a)=>(b)=> a*b;
+
+      const multilplyBy5 = multilply1(5);
+
+      console.log(multilplyBy5(4));
