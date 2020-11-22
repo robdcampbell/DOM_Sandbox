@@ -31,3 +31,10 @@ function generation(x, y) {
 }
 
 console.log(generation(-3,'f'))
+
+
+// Create a function that returns an array of strings sorted by length in ascending order.
+
+function sortByLength(arr) {
+	return arr.length === 0 ? [] : arr.sort((a,b)=>(a.length)-(b.length));
+}
