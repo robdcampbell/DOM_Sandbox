@@ -38,3 +38,14 @@ console.log(generation(-3,'f'))
 function sortByLength(arr) {
 	return arr.length === 0 ? [] : arr.sort((a,b)=>(a.length)-(b.length));
 }
+
+
+// Given an object of the stolen items and a limit, return the difference between the total value of those items and the limit of the policy.
+
+const calculateDifference = (obj,limit)=>{
+  return Object.values(obj).reduce((a,b)=>a+b)-limit;
+};
+
+console.log(calculateDifference({ "baseball bat": 20 }, 5))
+
+console.log(calculateDifference({ skate: 200, painting: 200, shoes: 1 }, 400))
