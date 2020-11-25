@@ -30,7 +30,7 @@ function generation(x, y) {
 
 }
 
-console.log(generation(-3,'f'))
+//console.log(generation(-3,'f'))
 
 
 // Create a function that returns an array of strings sorted by length in ascending order.
@@ -41,11 +41,28 @@ function sortByLength(arr) {
 
 
 // Given an object of the stolen items and a limit, return the difference between the total value of those items and the limit of the policy.
+    /*
+    const calculateDifference = (obj,limit)=>{
+      return Object.values(obj).reduce((a,b)=>a+b)-limit;
+    };
 
-const calculateDifference = (obj,limit)=>{
-  return Object.values(obj).reduce((a,b)=>a+b)-limit;
-};
+    console.log(calculateDifference({ "baseball bat": 20 }, 5))
 
-console.log(calculateDifference({ "baseball bat": 20 }, 5))
+    console.log(calculateDifference({ skate: 200, painting: 200, shoes: 1 }, 400))
+    */
 
-console.log(calculateDifference({ skate: 200, painting: 200, shoes: 1 }, 400))
+
+
+//  Create a function that will take a HEX number and returns the binary equivalent (as a string)
+
+const toBinary = (hex)=> {
+  // Will translate the hexidecimal number into a Bianary #
+  return hex.toString(2);
+}
+
+
+// Explore using the eval() method
+const relation1 = "101=101"
+
+console.log(eval(relation1.replace('=','===')));
+
