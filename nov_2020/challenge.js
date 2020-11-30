@@ -80,3 +80,10 @@ Please check the examples below for a clearer representation of the behavior exp
         return n+basenum;
       }
     }
+
+    const code = {name:'Test1', item :"Pterodactyl" };
+
+    console.log(code);
+
+    const [a,b] = code;
+    console.log(a);
