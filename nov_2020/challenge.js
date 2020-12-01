@@ -81,9 +81,13 @@ Please check the examples below for a clearer representation of the behavior exp
       }
     }
 
-    const code = {name:'Test1', item :"Pterodactyl" };
+  // Snail goes up the stairs
 
-    console.log(code);
+  function totalDistance(height, length, tower) {
+    const total = parseFloat((tower/height)*length+tower);
+    return Number.isInteger(total) 
+      ? total 
+      : parseFloat(((tower/height)*length+tower).toFixed(1));
+  }
 
-    const [a,b] = code;
-    console.log(a);
+  console.log(totalDistance(0.2,0.4,100))
