@@ -91,3 +91,24 @@ Please check the examples below for a clearer representation of the behavior exp
   }
 
   console.log(totalDistance(0.2,0.4,100))
+
+  // Given three arguments ⁠— an object obj of the stolen items, the pets name and a value ⁠— return an object with that name and value in it (as key-value pairs).
+
+  function addName(obj, name, value) {
+   //BAD, but works
+      // const source = {};
+      // source[name] = value;
+      //  return Object.assign(obj,source)
+    
+    //BETTER:
+      // obj[name] = value;
+      // return obj;
+    
+    // Also GOOD:
+      // return {...obj, [name]: value}
+
+
+  }
+  console.log(addName({ piano: 500, stereo: 300 }, "Caligula", 440))
+
+      // addName({ piano: 500, stereo: 300 }, "Caligula", 440) ➞ { piano: 500, stereo: 300, Caligula: 440 }
