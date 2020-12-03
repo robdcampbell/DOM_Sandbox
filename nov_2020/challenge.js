@@ -112,3 +112,17 @@ Please check the examples below for a clearer representation of the behavior exp
   console.log(addName({ piano: 500, stereo: 300 }, "Caligula", 440))
 
       // addName({ piano: 500, stereo: 300 }, "Caligula", 440) ➞ { piano: 500, stereo: 300, Caligula: 440 }
+
+      //Create a function that returns true if all parameters are truthy, and false otherwise.
+
+      /*
+
+      allTruthy(true, true, true) ➞ true
+
+      allTruthy(true, false, true) ➞ false
+
+      allTruthy(5, 4, 3, 2, 1, 0) ➞ false
+      
+      */
+
+      
