@@ -125,4 +125,9 @@ Please check the examples below for a clearer representation of the behavior exp
       
       */
 
-      
+     function allTruthy(...args) {
+      // By default, .every() will return all "Truthy" values
+      return [...args].every((x)=> x);
+    }
+  
+
