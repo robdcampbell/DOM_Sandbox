@@ -9,5 +9,7 @@ console.log("Pterodactyl");
 // count(654321) ➞ 6
 // count(638476) ➞ 6
 const count = (num) => {
-  return String(num);
+  return `${Math.abs(num)}`.length;
 };
+
+console.log(count(3423423));
