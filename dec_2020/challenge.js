@@ -21,3 +21,19 @@ console.log(count(3423423));
 
   futurePeople(5240, 3) ➞ 6320
 */
+
+// Find the landmass percentage of each country in comparison to the rest of the world.
+
+function areaOfCountry(name, area) {
+  return `${name} is ${((area / 148940000) * 100).toFixed(
+    2
+  )}% of the total world's landmass`;
+}
+
+// examples:
+/* 
+  Test Passed: Value == "USA is 6.29% of the total world's landmass"
+  Test Passed: Value == "Russia is 11.48% of the total world's landmass"
+  Test Passed: Value == "Iran is 1.11% of the total world's landmass"
+  Test Passed: Value == "India is 2.21% of the total world's landmass"
+  */
